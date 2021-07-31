@@ -1,0 +1,91 @@
+html, body {
+    font-family: 'Play', sans-serif;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent !important;
+    height: calc(100% - 10px);
+    min-height: calc(100% - 10px);
+    margin: 0;
+    padding: 0 0 50px 0;
+    font-size: 14px;
+    color: #fdfdfd;
+    user-select: none;
+}
+
+#wrapper {
+    position: relative;
+    box-sizing: border-box;
+    display: none;
+    grid-template-columns: 300px auto;
+    height: 100%;
+    margin: 0;
+}
+
+#list {
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(19, 19, 19, 0.37);
+    padding-left: 5px;
+}
+
+#header {
+    position: relative;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(19, 19, 19, 0.37);
+    height: max-content;
+    padding-top: 5px;
+    text-align: center;
+}
+
+
+.pageLinkContainer a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px;
+    margin: 3px;
+    background: #ffa500;
+    display: inline-block;
+}
+
+a:hover, .active {
+
+    background: #ff271a !important;
+}
+
+li:hover {
+
+    text-decoration: underline;
+}
+
+
+.btnClose {
+
+    border: none;
+    font-size: 1.0em;
+    margin: 10px 0;
+    padding: 5px 10px;
+    background-color: rgba(255, 0, 0, 0.3);
+    color: #fdf9ec;
+}
+
+
+.timeDivContainer {
+
+    position: absolute;
+    left: 10px;
+    bottom: 13px;
+}
+
+#timeDiv {
+
+    display: inline-block;
+    color: yellow;
+    font-size: 1.2em;
+}
+
+.qHl {
+    color: yellow;
+}
