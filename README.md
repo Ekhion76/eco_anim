@@ -14,4 +14,11 @@ Funkciók:
  - méri az animáció időtartamát
  - Alexguirre féle animáció listát használja (animations.js): https://alexguirre.github.io/animations-list/
 
+Használat:
+ - /anim paranccsal indul, megjelenik a nui felület
+ - i betűvel átkerül a fókusz a nui felületre, lehet animációra klikkelni, keresni
+ - animáció névre klikkelve megjelennek az NPC-k előtted és megkezdik az animot
+ - ESC billentyűvel  lekerül a fókusz és mozoghatsz, de NUI és az NPC-k maradnak
+ - BEZÁR gombbal, NPC-k törlésre kerülnek, NUI felület eltűnik
+
 ![ecoanim preview](https://github.com/Ekhion76/eco_anim/blob/main/preview_images/eco_anim.jpg)
