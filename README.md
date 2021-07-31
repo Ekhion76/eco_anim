@@ -23,4 +23,6 @@ Használat:
  - ESC billentyűvel  lekerül a fókusz és mozoghatsz, de NUI és az NPC-k maradnak
  - BEZÁR gombbal, NPC-k törlésre kerülnek, NUI felület eltűnik
 
+Kaszinó animok ki vannak kommentelve (animations.js)
+
 ![ecoanim preview](https://github.com/Ekhion76/eco_anim/blob/main/preview_images/eco_anim.jpg)
