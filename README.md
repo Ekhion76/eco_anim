@@ -14,7 +14,7 @@ Funkciók:
  - kereső
  - több ped beállítása (különböző flag-ekkel)
  - méri az animáció időtartamát
- - Alexguirre féle animáció listát használja (animations.js): https://alexguirre.github.io/animations-list/
+ - Alexguirre féle animáció listát használja (animations.js): JS: view-source:https://alexguirre.github.io/animations-list/js/animations.js HTML: https://alexguirre.github.io/animations-list/ 
 
 Használat:
  - /anim paranccsal indul, megjelenik a nui felület
