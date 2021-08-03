@@ -1,6 +1,8 @@
 # eco_anim
 Fejlesztői szkript animációk keresésére
 
+:pencil2: Tutya Discord elérhetősége (fejlesztő): HipnotikusAvasSzalonna#3252
+
 FONTOS: letöltés után a mappa neve "eco_anim" legyen, töröld a "-main" suffixet.
 
 A GTA5 ben több, mint 150 ezer animáció található, ezek egy része prop-okra, állatokra használható. Nehéz megtalálni azt az animációt, ami a szkriptedhez legjobban megfelel, ebben próbál ez a szkript segíteni.
