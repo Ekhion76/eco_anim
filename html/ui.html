@@ -1,0 +1,61 @@
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<!-- PAGES -->
+<div id="wrapper">
+
+    <div id="header">
+        <div id="header_top">
+            <div class="left"></div>
+            <div class="center">Automatically copy to clipboard</div>
+            <div class="right"><span id="close" class="close btn">X</span></div>
+        </div>
+
+        <div id="search_container" class="center">
+
+            <form name="search_form">
+                <input type="text" name="q" id="q" placeholder="search...">
+                <button id="search_btn">search</button>
+                <button id="reset_btn">reset</button>
+            </form>
+        </div>
+
+        <div id="slider_header">
+
+            <div class="left"><span id="prev" class="paging btn">prev</span></div>
+            <div id="hits" class="center"></div>
+            <div id="pages" class="center"></div>
+            <div class="right"><span id="next" class="paging btn">next</span></div>
+        </div>
+
+        <div id="slider_container">
+
+            <div id="slider"></div>
+        </div>
+
+        <div id="message_container">
+
+            <span class="bold">Played:</span>
+            <ul id="playing">
+                <li id="selectedDict">no selected anim</li>
+                <li id="selectedName">no selected anim</li>
+            </ul>
+            <span class="bold">Play time:</span>
+            <span id="playTime">0ms</span>
+        </div>
+    </div>
+
+    <div id="container"></div>
+</div>
+
+<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+<script src="js/jquery-ui.js" type="text/javascript"></script>
+<script src="js/animations.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+
+</body>

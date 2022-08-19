@@ -1,0 +1,295 @@
+:root {
+    --html-font-size: 14px;
+}
+
+html {
+    font-size: var(--html-font-size);
+}
+
+html, body {
+    font-family: 'Play', sans-serif;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    color: gainsboro;
+}
+
+*, :before, :after {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0 0 0 1.5rem;
+    margin: 0.2rem 0;
+}
+
+li {
+    overflow: hidden;
+}
+
+#container p {
+    background-color: #3c373a;
+    margin: 1rem 0.5rem 0.5rem 0;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0 0.2rem 0.5rem;
+    overflow: hidden;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+
+}
+
+.right {
+    text-align: right;
+}
+
+.btn {
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.btn:hover {
+    /*box-shadow: 0 0 0.13rem 0.13rem #656879;*/
+    filter: brightness(1.4);
+    cursor: pointer;
+}
+
+.close {
+    background: #c40909;
+}
+
+.paging {
+    border: 0.1rem solid #515151;
+    background: #333;
+}
+
+#wrapper > * {
+    min-width: 0;
+}
+
+#wrapper {
+    display: none;
+    grid-template-rows: min-content auto;
+    width: 25rem;
+    height: 100%;
+    padding: 0.5rem;
+    background: rgba(23, 19, 22, 0.90);
+}
+
+#header_top {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+#search_container {
+    padding: 0.5rem 0;
+}
+
+#slider_header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+#container {
+    overflow-y: auto;
+}
+
+#slider_container {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+#slider {
+    width: 100%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(42, 42, 42, 0.15);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#message_container {
+    height: 6rem;
+    width: 100%;
+    background-color: green;
+    border-radius: 0.3rem;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+#playing {
+    overflow: hidden;
+}
+
+.active {
+    color: #c48a27;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.details {
+    display: block;
+    font-size: 0.8rem;
+    margin: 0.3rem 0;
+    color: grey;
+}
+
+
+
+/* JQUERY-UI.css */
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+
+    /* We use html here because we need a greater specificity to make sure disabled
+    works properly when clicked or hovered */
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border: 1px solid #c5c5c5;
+    background: #f6f6f6;
+    font-weight: normal;
+    color: #454545;
+}
+
+/* Corner radius */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+    border-top-left-radius: 3px;
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid #c5c5c5;
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+    border-top-right-radius: 3px;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+    border-bottom-left-radius: 3px;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+    border-bottom-right-radius: 3px;
+}
+
+/* Overlays */
+.ui-widget-overlay {
+    background: #aaaaaa;
+    opacity: .3;
+    -ms-filter: Alpha(Opacity=30); /* support: IE8 */
+}
+
+.ui-widget-shadow {
+    -webkit-box-shadow: 0px 0px 5px #666666;
+    box-shadow: 0px 0px 5px #666666;
+}
+
+.ui-widget-content {
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    color: #333333;
+}
+
+.ui-slider-horizontal {
+    height: .8em;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -.3em;
+    margin-left: -.6em;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+
+.ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+}
+
+.ui-widget {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+}
+
+.ui-slider {
+    position: relative;
+    text-align: left;
+}
+
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 1.2em;
+    height: 1.2em;
+    cursor: pointer;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    border: 1px solid #003eff;
+    background: #007fff;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+    border: 1px solid #cccccc;
+    background: #ededed;
+    font-weight: normal;
+    color: #2b2b2b;
+}
