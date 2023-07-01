@@ -1,7 +1,7 @@
 # ECO ANIM
 [STANDALONE] FiveM developer helper script for animation search
 
-Browse and search between 140,000 animations
+Browse and search between ~~140,000~~ 240,000 animations (Up to San Andreas Mercenaries DLC (2944))
 
 Features:
  - automatically copy the selected animation data to the clipboard
