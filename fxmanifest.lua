@@ -6,7 +6,6 @@ description 'Animation Presentation'
 version '1.0'
 
 client_scripts {
-    'config.lua',
     'client/main.lua'
 }
 
