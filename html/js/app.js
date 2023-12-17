@@ -39,96 +39,71 @@ $slider.slider({
 });
 
 $prev.on("click", function () {
-
     let value = $slider.slider("option", "value");
-    if (value - 1 >= 0) {
-
+    if (value > 0) {
         $slider.slider("option", "value", value - 1);
     }
 });
 
 $next.on("click", function () {
-
     let value = $slider.slider("option", "value");
-    if (value + 1 <= maxPage) {
-
+    if (value < maxPage) {
         $slider.slider("option", "value", value + 1);
     }
 });
 
 /* SEARCH */
 $search_btn.on("click", function (e) {
-
     e.preventDefault();
+    let q = $('#q').val().trim().toLowerCase();
+    if (!q) return;
+    idx = 0;
+    resultName = [];
+    resultDict = [];
+    for (const raw of animations) {
+        let names = [];
+        if (raw.length < 2) {
+            continue;
+        }
 
-    let q = $('#q').val().toLowerCase();
-
-    if (q.length > 0) {
-
-        idx = 0;
-        resultName = [];
-        resultDict = [];
-
-        animations.forEach(raw => {
-
-            let names = [];
-
-            if (raw.length < 2) {
-                return
+        if (raw[0].includes(q)) {
+            for (let i = 1; i < raw.length; i++) {
+                names.push([idx, raw[i]])
             }
-
-            if (raw[0].includes(q)) {
-                for (let i = 1; i < raw.length; i++) {
-                    names.push([idx, raw[i]])
+        } else {
+            raw.forEach(n => {
+                if (n.includes(q)) {
+                    names.push([idx, n])
                 }
-            } else {
-
-                raw.forEach(n => {
-                    if (n.includes(q)) {
-                        names.push([idx, n])
-                    }
-                });
-            }
-
-            if (names.length > 0) {
-
-                resultDict[idx] = [raw[0], raw.length - 1, names.length];
-                resultName.push(...names);
-            }
-
-            idx++;
-        });
-
-        maxPage = Math.floor(resultName.length / itemsPerPage);
-        $slider.slider("option", "max", maxPage);
-        $slider.slider("option", "value", 0);
-
-        updatePageInfo(0);
-        render(0);
+            });
+        }
+        if (names.length > 0) {
+            resultDict[idx] = [raw[0], raw.length - 1, names.length];
+            resultName.push(...names);
+        }
+        idx++;
     }
+    maxPage = Math.floor(resultName.length / itemsPerPage);
+    $slider.slider("option", {max: maxPage, value: 0});
+    updatePageInfo(0);
+    render(0);
 });
 
 $reset_btn.on("click", function (e) {
-
     e.preventDefault();
-
     $('#q').val('');
 
     resultName = nameArray;
     resultDict = dictArray;
-
     maxPage = Math.floor(resultName.length / itemsPerPage);
     $slider.slider("option", "max", maxPage);
     $slider.slider("option", "value", 0);
-
     updatePageInfo(0);
     render(0);
 });
 
 $form.on('keyup keypress', function (e) {
-
     let keyCode = e.keyCode || e.which;
-
     if (keyCode === 13) {
         e.preventDefault();
         return false;
@@ -136,83 +111,55 @@ $form.on('keyup keypress', function (e) {
 });
 
 $('#close').on("click", function () {
-
     $('#wrapper').css("display", "none");
     $.post(`https://${resourceName}/exit`);
 });
 
 $(document).on("keyup", function (key) {
-
     if (key.which === 27) {
-
         $('#wrapper').css("display", "none");
         $.post(`https://${resourceName}/exit`);
     }
 });
 
 function updatePageInfo(currentPage) {
-
     $hits.html(`hits: ${resultName.length.toLocaleString('en-US')}`);
-    $pages.html(`page: ${ currentPage } / ${ maxPage }`);
+    $pages.html(`page: ${currentPage} / ${maxPage}`);
 }
 
 function render(start) {
-
     let dictId = -1;
-    let out = '';
+    let elements = [];
+    let liId = 0;
 
     let requiredItems = start + itemsPerPage;
     let maxItems = resultName.length;
 
-    requiredItems = requiredItems > maxItems ? maxItems : requiredItems;
-    start = start > maxItems ? maxItems : start;
+    requiredItems = Math.min(requiredItems, maxItems);
+    start = Math.min(start, maxItems);
 
     for (let i = start; i < requiredItems; i++) {
-
         if (resultName[i][0] !== dictId) {
-
             dictId = resultName[i][0];
             let dict = resultDict[dictId];
-
-            out += `</ul>\n`;
-            out += `<p>${dict[0]} <span class="details">show: ${dict[2]} / ${dict[1]}</span></p>\n`;
-            out += `<ul data-dict="${dict[0]}">\n`;
+            elements.push(`</ul><p>${dict[0]} <span class="details">show: ${dict[2]} / ${dict[1]}</span></p><ul data-dict="${dict[0]}">`);
         }
-
-        out += `<li>${resultName[i][1]}</li>\n`;
+        elements.push(`<li id='li${liId++}'>${resultName[i][1]}</li>`);
     }
 
-    $container.html(`<ul>${out}</ul>`);
+    $container.html(`<ul>${elements.join('')}</ul>`);
     $container.animate({scrollTop: 0}, "slow");
-
-    $("li").on("click", function () {
-
-        let dict = this.parentNode.dataset.dict;
-        let name = this.innerText;
-
-        $("li").removeClass('active');
-        $(this).addClass('active');
-
-        copyToClipboard((`dict = '${dict}', name = '${name}'`));
-        $.post(`https://${resourceName}/playAnim`, JSON.stringify({
-            dict: dict,
-            name: name
-        }), response => {
-            renderMessage(response);
-        });
+    $container.on("click", "li", function () {
+        handleSelectedItem($(this));
     });
 }
 
 function renderMessage(data) {
-
     if (data.loadAnim) {
-
         $selectedDict.html(data.dict);
         $selectedName.html(data.name);
         $playTime.html(`${Math.round(data.playTime * 100) / 100}sec`);
-
     } else {
-
         $selectedDict.html('cannot be loaded');
         $selectedName.html('-');
         $playTime.html('-');
@@ -228,19 +175,14 @@ function copyToClipboard(string) {
 }
 
 animations.forEach(raw => {
-
     let sumNameLength = raw.length - 1;
-
     if (sumNameLength < 1) {
-        return
+        return;
     }
-
     dictArray[idx] = [raw[0], sumNameLength, sumNameLength];
-
     for (let i = 1; i < raw.length; i++) {
-        nameArray.push([idx, raw[i]])
+        nameArray.push([idx, raw[i]]);
     }
-
     idx++;
 });
 
@@ -255,11 +197,40 @@ render(0);
 
 // Listen for NUI Events
 window.addEventListener('message', function (event) {
-
     let item = event.data;
-
     if (item.subject === 'OPEN') {
-
         $('#wrapper').css("display", "grid");
     }
 });
+
+$(document).on("keydown", function (e) {
+    const up = e.which === 38;
+    const down = e.which === 40;
+    if (up || down) {
+        e.preventDefault();
+        let $activeItem = $("li.active");
+        if ($activeItem.length > 0) {
+            let currentId = parseInt($activeItem.attr('id').replace('li', ''));
+            let newId = 'li' + (up ? currentId - 1 : currentId + 1);
+            let newItem = $container.find("#" + newId);
+            if (newItem.length > 0) {
+                handleSelectedItem(newItem);
+            }
+        } else {
+            handleSelectedItem($container.find("li:first"));
+        }
+    }
+});
+
+function handleSelectedItem($selectedItem) {
+    let dict = $selectedItem.parent().data('dict');
+    let name = $selectedItem.text();
+
+    $container.find("li").removeClass('active');
+    $selectedItem.addClass('active');
+
+    copyToClipboard((`dict = '${dict}', name = '${name}'`));
+    $.post(`https://${resourceName}/playAnim`, JSON.stringify({dict, name}), response => {
+        renderMessage(response);
+    });
+}
