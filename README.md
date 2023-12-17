@@ -13,7 +13,7 @@ Features:
 
 Use:
  - /anim command starts, show ui
- - click on the anim name to appear three peds and play the animation
+ - click on the anim name or navigate up/down buttons to appear three peds and play the animation
  - ESC or close button turn off and delete peds
 
 Casino animations out there are comment (animations.js)
