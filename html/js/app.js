@@ -12,6 +12,7 @@ const $form = $("form");
 const $selectedDict = $('#selectedDict');
 const $selectedName = $('#selectedName');
 const $playTime = $('#playTime');
+const floodProtectTime = 1000;
 
 let idx = 0;
 let maxPage = 0;
@@ -19,7 +20,11 @@ let dictArray = [];
 let nameArray = [];
 let resultName = [];
 let resultDict = [];
+let $resultItems = [];
 let itemsPerPage = 1000;
+let floodProtect;
+let loadedItemId;
+let lastLoadTime = new Date().getTime();
 
 $("#wrapper").draggable({
     handle: '#header',
@@ -150,8 +155,10 @@ function render(start) {
     $container.html(`<ul>${elements.join('')}</ul>`);
     $container.animate({scrollTop: 0}, "slow");
     $container.on("click", "li", function () {
-        handleSelectedItem($(this));
+        elementHighlighting($(this));
+        loadSelectedItem($(this));
     });
+    $resultItems = $container.find("li");
 }
 
 function renderMessage(data) {
@@ -206,30 +213,66 @@ window.addEventListener('message', function (event) {
 $(document).on("keydown", function (e) {
     const up = e.which === 38;
     const down = e.which === 40;
-    if (up || down) {
-        e.preventDefault();
-        let $activeItem = $("li.active");
-        if ($activeItem.length > 0) {
-            let currentId = parseInt($activeItem.attr('id').replace('li', ''));
-            let newId = 'li' + (up ? currentId - 1 : currentId + 1);
-            let newItem = $container.find("#" + newId);
-            if (newItem.length > 0) {
-                handleSelectedItem(newItem);
-            }
-        } else {
-            handleSelectedItem($container.find("li:first"));
+    if (!up && !down) return;
+    e.preventDefault();
+    let $activeItem = $resultItems.filter(".active");
+    if ($activeItem.length > 0) {
+        let newItem = getNewItem($activeItem, up);
+        if (newItem.length > 0) {
+            scrollToCenter(newItem);
+            elementHighlighting(newItem);
         }
+    } else {
+        elementHighlighting($resultItems.first());
     }
 });
 
-function handleSelectedItem($selectedItem) {
+$(document).on("keyup", function (e) {
+    if (floodProtect) return;
+    const up = e.which === 38;
+    const down = e.which === 40;
+    if (!up && !down) return;
+    e.preventDefault();
+    let $activeItem = $resultItems.filter(".active");
+    if ($activeItem.length > 0) {
+        let now = new Date().getTime();
+        if (now - lastLoadTime > floodProtectTime) {
+            loadSelectedItem($activeItem)
+        }
+        floodProtect = true;
+        setTimeout(function () {
+            $activeItem = $resultItems.filter(".active");
+            if ($activeItem.attr('id') !== loadedItemId) {
+                let now = new Date().getTime();
+                loadSelectedItem($activeItem)
+            }
+            floodProtect = false;
+        }, floodProtectTime);
+    }
+});
+
+function scrollToCenter(item) {
+    const scrollTopValue = item.offset().top - $container.offset().top + $container.scrollTop() - ($container.height() / 2) + (item.height() / 2);
+    $container.scrollTop(scrollTopValue);
+}
+
+function getNewItem($activeItem, up) {
+    let currentId = parseInt($activeItem.attr('id').replace('li', ''));
+    let newId = 'li' + (up ? currentId - 1 : currentId + 1);
+    return $resultItems.filter("#" + newId);
+}
+
+function elementHighlighting(elem) {
+    $resultItems.removeClass('active');
+    elem.addClass('active');
+}
+
+function loadSelectedItem($selectedItem) {
     let dict = $selectedItem.parent().data('dict');
     let name = $selectedItem.text();
-
-    $container.find("li").removeClass('active');
-    $selectedItem.addClass('active');
-
+    loadedItemId = $selectedItem.attr('id');
     copyToClipboard((`dict = '${dict}', name = '${name}'`));
+    lastLoadTime = new Date().getTime();
     $.post(`https://${resourceName}/playAnim`, JSON.stringify({dict, name}), response => {
         renderMessage(response);
     });
