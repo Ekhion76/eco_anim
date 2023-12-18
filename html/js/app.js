@@ -40,8 +40,15 @@ $slider.slider({
     change: function (event, ui) {
         updatePageInfo(ui.value);
         render(ui.value * itemsPerPage);
+    },
+    create: function() {
+        disableKeyOn();
     }
 });
+
+function disableKeyOn() {
+    $(".ui-slider-handle").off('keydown keyup');
+}
 
 $prev.on("click", function () {
     let value = $slider.slider("option", "value");
