@@ -31,6 +31,11 @@ $("#wrapper").draggable({
     containment: "parent"
 });
 
+$container.on("click", "li", function () {
+    elementHighlighting($(this));
+    loadSelectedItem($(this));
+});
+
 $slider.slider({
     min: 0,
     value: 0,
@@ -161,10 +166,6 @@ function render(start) {
 
     $container.html(`<ul>${elements.join('')}</ul>`);
     $container.animate({scrollTop: 0}, "slow");
-    $container.on("click", "li", function () {
-        elementHighlighting($(this));
-        loadSelectedItem($(this));
-    });
     $resultItems = $container.find("li");
 }
 
