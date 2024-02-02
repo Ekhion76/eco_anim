@@ -4,11 +4,10 @@
 Browse and search between 140,000 animations
 
 Features:
- - automatically copy the selected animation data to the clipboard
- - search box
+ - Prop attachment option
+ - Saving own animations, attached props and prop adjust
  - setting multiple peds (with different flags)
  - indicates the duration of animation
- - movable UI
  - Alexguirre uses an animation list (animations.js): JS: view-source:https://alexguirre.github.io/animations-list/js/animations.js HTML: https://alexguirre.github.io/animations-list/ 
 
 Use:
