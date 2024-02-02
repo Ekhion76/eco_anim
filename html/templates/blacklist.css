@@ -1,0 +1,43 @@
+#blacklist_container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    height: 100%;
+}
+
+#blacklist_content {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#blacklist_footer {
+    padding: 0.4rem 0;
+    text-align: right;
+}
+
+#blacklist_input_field {
+    display: grid;
+    grid-template-columns: 1fr 4rem;
+    gap: 0.5rem;
+}
+
+.blacklist_item {
+    display: inline-block;
+    border-radius: 0.8rem;
+    background-color: #3c373a;
+    padding: 0.5rem;
+    margin: 0.3rem;
+}
+
+#clear_all_blacklist_item_btn {
+    margin-left: 1rem;
+}
+
+.bl_del {
+    margin: 0 0.2rem 0 0.7rem;
+}
+
+.bl_del:hover {
+    color: crimson;
+}
+

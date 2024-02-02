@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="templates/code_monitor.css" type="text/css">
+    <link rel="stylesheet" href="templates/blacklist.css" type="text/css">
+    <link rel="stylesheet" href="templates/lister.css" type="text/css">
+    <link rel="stylesheet" href="templates/play_control.css" type="text/css">
+    <link rel="stylesheet" href="templates/attachment.css" type="text/css">
+    <link rel="stylesheet" href="templates/window.css" type="text/css">
+    <link rel="stylesheet" href="select_box.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <title>Eco Anim</title>
+</head>
+
+<body>
+<!-- PAGES -->
+<div id="wrapper">
+    <div id="page_wrapper">
+        <nav id="nav_tabs_container" class="nav_tabs_right">
+            <div id="hide_tab" class="nav_tab"><i class="fa-solid fa-eye-slash"></i></div>
+            <!--<div id="lister_tab" class="nav_tab"><i class="fa-solid fa-list"></i></div>-->
+            <div id="lister_tab" class="nav_tab"><i class="fa-solid fa-person-walking"></i></div>
+            <div id="attachment_tab" class="nav_tab"><i class="fa-solid fa-link"></i></div>
+            <div id="play_control_tab" class="nav_tab"><i class="fa-solid fa-play"></i></div>
+            <div id="blacklist_tab" class="nav_tab"><i class="fa-solid fa-list-check"></i></div>
+            <div id="preset_tab" class="nav_tab"><i class="fa-solid fa-person-chalkboard"></i></div>
+            <div id="code_monitor_tab" class="nav_tab"><i class="fa-regular fa-clipboard"></i></div>
+            <div id="focus_tab" class="nav_tab"><span class="vertical_text"><i class="fa-solid fa-video"></i> PRESS E</span> </div>
+        </nav>
+        <div id="page_header">
+            ECO Anim <span id="close" class="close btn">X</span>
+        </div>
+        <div id="page_container"></div>
+    </div>
+</div>
+
+<script src="nui://game/ui/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+
+<script src="../database/animations.js"></script>
+
+<script src="templates/window.js"></script>
+<script src="templates/play_control.js"></script>
+<script src="templates/attachment.js"></script>
+<script src="templates/blacklist.js"></script>
+<script src="templates/lister.js"></script>
+<script src="templates/code_monitor.js"></script>
+
+<script src="js/class/configuration_manager.js"></script>
+<script src="js/class/code_monitor.js"></script>
+<script src="js/class/search_preset.js"></script>
+<script src="js/class/select_box.js"></script>
+<script src="js/class/window.js"></script>
+<script src="js/class/page.js"></script>
+<script src="js/class/attachment.js"></script>
+<script src="js/class/local_storage_handler.js"></script>
+<script src="js/class/play_control.js"></script>
+<script src="js/class/lister.js"></script>
+<script src="js/class/blacklist.js"></script>
+<script src="js/class/database.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

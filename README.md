@@ -1,7 +1,7 @@
-# ECO ANIM
+# ECO Anim
 [STANDALONE] FiveM developer helper script for animation search
 
-Browse and search between ~~140,000~~ 240,000 animations (Up to San Andreas Mercenaries DLC (2944))
+Browse and search between 140,000 animations
 
 Features:
  - automatically copy the selected animation data to the clipboard
@@ -15,8 +15,6 @@ Use:
  - /anim command starts, show ui
  - click on the anim name or navigate up/down buttons to appear three peds and play the animation
  - ESC or close button turn off and delete peds
-
-Casino animations out there are comment (animations.js)
 
 ![ecoanim preview](https://github.com/Ekhion76/eco_anim/blob/main/preview_images/eco_anim_1.jpg)
 ![ecoanim preview](https://github.com/Ekhion76/eco_anim/blob/main/preview_images/eco_anim_2.jpg)

@@ -1,0 +1,86 @@
+#anim_list_wrapper {
+    display: none;
+    height: 100%;
+}
+
+#anim_list_container {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+#list_header {
+    overflow: hidden;
+    width: 100%;
+}
+
+#list_content p {
+    background-color: #3c373a;
+    margin: 1rem 0.5rem 0.5rem 0;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0 0.2rem 0.5rem;
+    overflow: hidden;
+}
+
+#game_build_container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    font-size: 0.8rem;
+
+}
+
+.game_build_filter_toggle_button {
+    text-align: right;
+    font-size: large;
+}
+
+#animation_search_form {
+    display: grid;
+    grid-template-columns: 1fr 6rem 4rem;
+    gap: 0.5rem;
+}
+
+#message_container {
+     height: 6rem;
+     width: 100%;
+     background-color: green;
+     border-radius: 0.3rem;
+     padding: 0.4rem;
+     margin-bottom: 1rem;
+ }
+
+#search_container {
+    padding: 0.5rem 0;
+}
+
+#pager_slider_header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+#list_content {
+    overflow-y: auto;
+}
+
+#pager_slider_container {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+#pager_slider {
+    width: 100%;
+}
+
+.paging {
+    border: 0.1rem solid #515151;
+    background: #333;
+}
+
+#playing {
+    overflow: hidden;
+}

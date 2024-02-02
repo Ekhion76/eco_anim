@@ -1,0 +1,1032 @@
+[
+    {
+        "animation": {
+            "dict": "amb@world_human_welding@male@base",
+            "name": "base"
+        },
+        "categoryId": "4",
+        "label": "Welding",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": 28422,
+                "name": "prop_weld_torch"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "misscarsteal4@aliens",
+            "name": "rehearsal_base_idle_director"
+        },
+        "categoryId": "1",
+        "label": "Ponders"
+    },
+    {
+        "animation": {
+            "dict": "melee@large_wpn@streamed_core_fps",
+            "name": "ground_attack_on_spot"
+        },
+        "categoryId": "4",
+        "label": "Miner - Pickaxe",
+        "prop": [
+            {
+                "adjustment": [
+                    -0.02,
+                    -0.19,
+                    -0.04,
+                    283,
+                    15,
+                    2
+                ],
+                "bone": 28422,
+                "name": "prop_tool_pickaxe"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "missbigscore2big_11",
+            "name": "push_trolly_walk"
+        },
+        "categoryId": "4",
+        "label": "Push Trolly"
+    },
+    {
+        "animation": {
+            "dict": "timetable@patricia@pat_ig_2@base",
+            "name": "base"
+        },
+        "categoryId": 0,
+        "label": ""
+    },
+    {
+        "animation": {
+            "dict": "misstvrram_5",
+            "name": "marines_idle_b"
+        },
+        "categoryId": "4",
+        "label": "Kneels and examines"
+    },
+    {
+        "animation": {
+            "dict": "rcm_epsilonism4",
+            "name": "ep_4_rcm_marnie_base_marnie"
+        },
+        "categoryId": "4",
+        "label": "Bends down to examine"
+    },
+    {
+        "animation": {
+            "dict": "misscarstealfinalecar_5_ig_3",
+            "name": "crouchloop"
+        },
+        "categoryId": "4",
+        "label": "Examining a car"
+    },
+    {
+        "animation": {
+            "dict": "misscarsteal2fixer",
+            "name": "confused_a"
+        },
+        "categoryId": "4",
+        "label": "Repairs a car engine"
+    },
+    {
+        "animation": {
+            "dict": "missbigscore2aig_7@gunman",
+            "name": "boot_l_loop"
+        },
+        "categoryId": "4",
+        "label": "Bending down to pack"
+    },
+    {
+        "animation": {
+            "dict": "missbigscore2aig_7@gunman",
+            "name": "van_loop"
+        },
+        "categoryId": "4",
+        "label": "Bend over and pack"
+    },
+    {
+        "animation": {
+            "dict": "missmic2_washing_face",
+            "name": "michael_washing_face"
+        },
+        "categoryId": "1",
+        "label": "Wash your face"
+    },
+    {
+        "animation": {
+            "dict": "random@getawaydriver",
+            "name": "base"
+        },
+        "categoryId": "4",
+        "label": "Crouching and examining"
+    },
+    {
+        "animation": {
+            "dict": "misstrevor1",
+            "name": "gang_chatting_base_c"
+        },
+        "categoryId": 0,
+        "label": ""
+    },
+    {
+        "animation": {
+            "dict": "misschinese2_barrelroll",
+            "name": "barrel_roll_loop_b"
+        },
+        "categoryId": "4",
+        "label": "Rolling a barrel",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": 60309,
+                "name": "prop_barrel_03d"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "rcm_epsilonism4",
+            "name": "eps_4_ig_1_jimmy_lookaround_base_jb"
+        },
+        "categoryId": "4",
+        "label": "He kneels and searches"
+    },
+    {
+        "animation": {
+            "dict": "timetable@maid@ig_2@",
+            "name": "ig_2_base"
+        },
+        "categoryId": 0,
+        "label": ""
+    },
+    {
+        "animation": {
+            "dict": "mp_fm_intro_cut",
+            "name": "base_loop"
+        },
+        "categoryId": 0,
+        "label": ""
+    },
+    {
+        "animation": {
+            "dict": "timetable@maid@cleaning_surface@base",
+            "name": "base"
+        },
+        "categoryId": "4",
+        "label": "Cleaning Surface"
+    },
+    {
+        "animation": {
+            "dict": "rcmnigel3",
+            "name": "base"
+        },
+        "categoryId": 0,
+        "label": ""
+    },
+    {
+        "animation": {
+            "dict": "missfbi1",
+            "name": "ext_t14_leaning_loop"
+        },
+        "categoryId": "4",
+        "label": "He fiddles with it in his hand"
+    },
+    {
+        "animation": {
+            "dict": "missdocksshowoffcar@base",
+            "name": "base_5"
+        },
+        "categoryId": "1",
+        "label": "With folded hands"
+    },
+    {
+        "animation": {
+            "dict": "missexile3",
+            "name": "ex03_dingy_search_case_a_michael"
+        },
+        "categoryId": "1",
+        "label": "Searches the ground"
+    },
+    {
+        "animation": {
+            "dict": "missfra1leadinout",
+            "name": "franklin_1_int_leadin_loop_denise"
+        },
+        "categoryId": "4",
+        "label": "He picks up small things on the ground"
+    },
+    {
+        "animation": {
+            "dict": "missheistdockssetup1ig_9b@base",
+            "name": "forklift_superviseb_base"
+        },
+        "categoryId": 0,
+        "label": ""
+    },
+    {
+        "animation": {
+            "dict": "amb@prop_human_bum_bin@idle_b",
+            "name": "idle_d"
+        },
+        "categoryId": 4,
+        "label": "Washing"
+    },
+    {
+        "animation": {
+            "dict": "missbigscoreprepd",
+            "name": "pull_level_michael"
+        },
+        "categoryId": "4",
+        "label": "He pulls a lever"
+    },
+    {
+        "animation": {
+            "dict": "missheistdockssetup1ig_13@exit",
+            "name": "guard_beatup_exit_dockworker"
+        },
+        "categoryId": "1",
+        "label": "He suffers on earth"
+    },
+    {
+        "animation": {
+            "dict": "missfinale_c2ig_11",
+            "name": "pushcar_offcliff_f"
+        },
+        "categoryId": "1",
+        "label": "He pushes a car"
+    },
+    {
+        "animation": {
+            "dict": "missfbi5ig_10",
+            "name": "lift_holdup_loop_labped"
+        },
+        "categoryId": "1",
+        "label": "He surrenders"
+    },
+    {
+        "animation": {
+            "dict": "missheist_jewel",
+            "name": "smash_case_c"
+        },
+        "categoryId": "4",
+        "label": "He breaks a display case and robs it"
+    },
+    {
+        "animation": {
+            "dict": "missheist_agency2aig_13",
+            "name": "pickup_briefcase"
+        },
+        "categoryId": "4",
+        "label": "He picks up a wallet from the floor"
+    },
+    {
+        "animation": {
+            "dict": "timetable@floyd@clean_kitchen@base",
+            "name": "base"
+        },
+        "categoryId": "4",
+        "label": "Cleans"
+    },
+    {
+        "animation": {
+            "dict": "missheist_jewel",
+            "name": "gassed_npc_guard"
+        },
+        "categoryId": "1",
+        "label": "The injured person is lying on the ground"
+    },
+    {
+        "animation": {
+            "dict": "missheistfbi3b_ig8_2",
+            "name": "cpr_loop_paramedic"
+        },
+        "categoryId": "1",
+        "label": "Resuscitation Cardiac massage"
+    },
+    {
+        "animation": {
+            "dict": "missheistchem2",
+            "name": "boat_dive_exit_player"
+        },
+        "categoryId": "4",
+        "label": "A diver splashes into the water"
+    },
+    {
+        "animation": {
+            "dict": "missfbi4prepp1",
+            "name": "_bag_walk_garbage_man"
+        },
+        "categoryId": "4",
+        "label": "He carries a garbage bag",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": 28422,
+                "name": "prop_cs_street_binbag_01"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "misslester1aig_2exit",
+            "name": "hr_greet_exitloop_gamer"
+        },
+        "categoryId": "4",
+        "label": "Gamer"
+    },
+    {
+        "animation": {
+            "dict": "missmechanic",
+            "name": "work2_base"
+        },
+        "categoryId": "0",
+        "label": "Mechanic"
+    },
+    {
+        "animation": {
+            "dict": "missheistdockssetup1ig_3@talk",
+            "name": "oh_hey_vin_dockworker"
+        },
+        "categoryId": "1",
+        "label": "He examines on one knee"
+    },
+    {
+        "animation": {
+            "dict": "missfam4",
+            "name": "base"
+        },
+        "categoryId": "1",
+        "label": "He looks at it while holding it in his hand"
+    },
+    {
+        "animation": {
+            "dict": "missheistdockssetup1ig_10@idle_a",
+            "name": "talk_pipe_a_worker1"
+        },
+        "categoryId": "4",
+        "label": "Crouching, he examines"
+    },
+    {
+        "animation": {
+            "dict": "missheistfbisetup1",
+            "name": "unlock_loop_janitor"
+        },
+        "categoryId": "1",
+        "label": "Caretaker / Janitor opens lock"
+    },
+    {
+        "animation": {
+            "dict": "mini@safe_cracking",
+            "name": "idle_base"
+        },
+        "categoryId": "4",
+        "label": "Safe cracking"
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_gardener_plant@male@base",
+            "name": "base"
+        },
+        "categoryId": "4",
+        "label": "Gardener Plant",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": 28422,
+                "name": "prop_cs_trowel"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_const_drill@male@drill@base",
+            "name": "base"
+        },
+        "categoryId": "4",
+        "label": "Drilling",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "28422",
+                "name": "prop_tool_jackham"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "amb@code_human_wander_drinking@beer@female@idle_a",
+            "name": "idle_c"
+        },
+        "categoryId": "5",
+        "label": "Drink beer",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "28422",
+                "name": "prop_amb_beer_bottle"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_musician@guitar@male@base",
+            "name": "base"
+        },
+        "categoryId": 0,
+        "label": "",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "60309",
+                "name": "prop_acc_guitar_01"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_janitor@male@idle_a",
+            "name": "idle_a"
+        },
+        "categoryId": "4",
+        "label": "Janitor sweeps (broom)",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "28422",
+                "name": "prop_tool_broom"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_muscle_flex@arms_at_side@base",
+            "name": "base"
+        },
+        "categoryId": "0",
+        "label": "Muscle flex"
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_maid_clean@base",
+            "name": "base"
+        },
+        "categoryId": "4",
+        "label": "Cleaning"
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_musician@bongos@male@base",
+            "name": "base"
+        },
+        "categoryId": 0,
+        "label": "",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "60309",
+                "name": "prop_bongos_01"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_picnic@male@base",
+            "name": "base"
+        },
+        "categoryId": 0,
+        "label": ""
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_hammering@male@base",
+            "name": "base"
+        },
+        "categoryId": 4,
+        "label": "Hammering",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "28422",
+                "name": "prop_tool_hammer"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "amb@code_human_wander_purse@female@base",
+            "name": "base"
+        },
+        "categoryId": "1",
+        "label": "Walks away with wallet(purse) in hand",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "28422",
+                "name": "prop_ld_purse_01"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_tennis_player@male@idle_a",
+            "name": "idle_b"
+        },
+        "categoryId": 0,
+        "label": "Tennis rack",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "28422",
+                "name": "prop_tennis_rack_01"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_security_shine_torch@male@idle_a",
+            "name": "idle_a"
+        },
+        "categoryId": "",
+        "label": "Police Torch",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "60309",
+                "name": "prop_scn_police_torch"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_tourist_map@female@idle_a",
+            "name": "idle_a"
+        },
+        "categoryId": "",
+        "label": "Read Tourist Map",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "28422",
+                "name": "p_tourist_map_01_s"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_paparazzi@male@idle_a",
+            "name": "idle_b"
+        },
+        "categoryId": "4",
+        "label": "Paparazzi",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "28422",
+                "name": "prop_pap_camera_01"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "anim@arena@amb@seat_drone_tablet@female@",
+            "name": "base"
+        },
+        "categoryId": 0,
+        "label": "Read Tablet",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "28422",
+                "name": "prop_cs_tablet"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_superhero@male@space_pistol@idle_b",
+            "name": "idle_e"
+        },
+        "categoryId": 0,
+        "label": "Space Pistol",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "28422",
+                "name": "prop_space_pistol"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_superhero@male@space_rifle@idle_a",
+            "name": "idle_a"
+        },
+        "categoryId": 0,
+        "label": "Space Riffle",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "28422",
+                "name": "prop_space_rifle"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "amb@code_human_wander_eating_donut_fat@male@idle_a",
+            "name": "idle_a"
+        },
+        "categoryId": 5,
+        "label": "Eat Sandwich",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "28422",
+                "name": "prop_sandwich_01"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "anim@amb@board_room@stenographer@computer@",
+            "name": "base_left_amy_skater_01"
+        },
+        "categoryId": 0,
+        "label": ""
+    },
+    {
+        "animation": {
+            "dict": "anim@amb@business@meth@meth_monitoring_no_work@",
+            "name": "base_lazycook"
+        },
+        "categoryId": 0,
+        "label": ""
+    },
+    {
+        "animation": {
+            "dict": "amb@prop_human_movie_studio_light@base",
+            "name": "base"
+        },
+        "categoryId": "4",
+        "label": "Repair"
+    },
+    {
+        "animation": {
+            "dict": "misscarsteal2_bum",
+            "name": "base"
+        },
+        "categoryId": 0,
+        "label": ""
+    },
+    {
+        "animation": {
+            "dict": "anim@amb@garage@chassis_repair@",
+            "name": "base_amy_skater_01"
+        },
+        "categoryId": "4",
+        "label": "Lying car mechanic2"
+    },
+    {
+        "animation": {
+            "dict": "amb@prop_human_movie_bulb@base",
+            "name": "base"
+        },
+        "categoryId": "4",
+        "label": "Light bulb replacement (repair)"
+    },
+    {
+        "animation": {
+            "dict": "anim@arena@amb@seat_drone_tablet@female@",
+            "name": "base"
+        },
+        "categoryId": 0,
+        "label": ""
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_stupor@male_looking_right@base",
+            "name": "base"
+        },
+        "categoryId": "1",
+        "label": ""
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_clipboard@male@base",
+            "name": "base"
+        },
+        "categoryId": "4",
+        "label": "Reading a note (clipboard)",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "60309",
+                "name": "p_cs_clipboard"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "anim@amb@business@cfm@cfm_drying_notes@",
+            "name": "base_worker"
+        },
+        "categoryId": "4",
+        "label": "Ambulance examining a patient"
+    },
+    {
+        "animation": {
+            "dict": "anim@veh@btype@side_ps@base",
+            "name": "jump_out"
+        },
+        "categoryId": 0,
+        "label": ""
+    },
+    {
+        "animation": {
+            "dict": "mini@atmbase",
+            "name": "base"
+        },
+        "categoryId": 0,
+        "label": ""
+    },
+    {
+        "animation": {
+            "dict": "anim@amb@range@load_clips@",
+            "name": "base_amy_skater_01"
+        },
+        "categoryId": "4",
+        "label": "Loading a cartridge (load clips)"
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_car_park_attendant@male@base",
+            "name": "base"
+        },
+        "categoryId": "4",
+        "label": "Traffic controller",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "28422",
+                "name": "prop_parking_wand_01"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "anim@arena@prize_wheel@male",
+            "name": "base"
+        },
+        "categoryId": 0,
+        "label": ""
+    },
+    {
+        "animation": {
+            "dict": "anim@amb@board_room@diagram_blueprints@",
+            "name": "base_amy_skater_01"
+        },
+        "categoryId": 0,
+        "label": ""
+    },
+    {
+        "animation": {
+            "dict": "amb@prop_human_seat_computer@male@base",
+            "name": "base"
+        },
+        "categoryId": "4",
+        "label": "Typing while sitting"
+    },
+    {
+        "animation": {
+            "dict": "amb@prop_human_bbq@male@base",
+            "name": "base"
+        },
+        "categoryId": "4",
+        "label": "Barbecue",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "28422",
+                "name": "prop_fish_slice_01"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_bum_freeway@male@base",
+            "name": "base"
+        },
+        "categoryId": "0",
+        "label": "Beggar, beggers, bum freeway",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": "28422",
+                "name": "prop_beggers_sign_01"
+            }
+        ]
+    },
+    {
+        "animation": {
+            "dict": "anim@veh@plane@seabreeze@front@ds@base",
+            "name": "hotwire"
+        },
+        "categoryId": 0,
+        "label": ""
+    },
+    {
+        "animation": {
+            "dict": "amb@world_human_vehicle_mechanic@male@base",
+            "name": "base"
+        },
+        "categoryId": "4",
+        "label": "Lying car mechanic"
+    },
+    {
+        "animation": {
+            "dict": "amb@code_human_wander_gardener_leaf_blower@base",
+            "name": "static"
+        },
+        "categoryId": "4",
+        "label": "Wander gardener leaf blower",
+        "prop": [
+            {
+                "adjustment": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "bone": 28422,
+                "name": "prop_leaf_blower_01"
+            }
+        ]
+    }
+]

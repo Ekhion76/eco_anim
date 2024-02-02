@@ -1,0 +1,116 @@
+#play_control_sub_container {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+}
+
+#control_buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1rem;
+    grid-gap: 2rem;
+    align-items: center;
+}
+
+#speed_control {
+    display: grid;
+    grid-template-columns: auto 10rem 2.5rem;
+    justify-items: center;
+    width: fit-content;
+    grid-gap: 1.0rem;
+    align-items: center;
+}
+
+#speed_multiplier_bar {
+    width: 100%;
+}
+#speed_multiplier_bar.ui-slider-horizontal {
+    height: 0.2rem;
+}
+
+#speed_multiplier_bar.ui-widget {
+    font-size: 0.7rem;
+}
+
+.icon::before {
+    display: inline-block;
+    font-family: "Font Awesome 6 Free", serif;
+    font-weight: bold;
+    margin-right: 0.4rem;
+    font-size: 1.2rem;
+    vertical-align: unset;
+}
+
+#progress_bar {
+    display: grid;
+    grid-template-columns: auto 2rem;
+    grid-gap: 1.0rem;
+    align-items: center;
+}
+
+#progress_value {
+    text-align: right;
+}
+
+#time_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: fit-content;
+    justify-self: end;
+}
+
+#time_container:before {
+    content: '\f017';
+    display: inline-block;
+    margin-right: 0.2em;
+    color: #fff;
+    font-family: "Font Awesome 6 Free", serif;
+    font-weight: 400;
+}
+
+.total_time {
+    text-align: right;
+}
+
+.progress_time {
+    padding-left: 0.5rem;
+    text-align: center;
+}
+
+.nav_btn {
+    width: fit-content;
+    background-color: #555555;
+    border-radius: 0.2rem;
+    padding: 0.4rem 1rem;
+}
+
+.play:after, .pause:after {
+    display: flex;
+    margin-right: 0.5em;
+    color: #fff;
+    font-family: "Font Awesome 6 Free", serif;
+    font-weight: 900;
+    font-size: x-large;
+    background-color: #3c373a;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.play:after {
+    content: '\f04b';
+}
+
+.pause:after {
+    content: '\f04c';
+}
+
+#play_control_anim_bar {
+    margin: 1rem 0 0 0;
+}
+
+#play_pause {
+
+}

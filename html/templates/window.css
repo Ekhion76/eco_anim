@@ -1,0 +1,34 @@
+.window {
+    display: block;
+    position: absolute !important;
+    background-color: var(--wrapper-bg-color);
+    border-radius: var(--wrapper-radius);
+    overflow: hidden;
+}
+
+.window_container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    grid-template-rows: auto 1fr;
+}
+
+.window_header{
+    background-color: #3c373a;
+    overflow: hidden;
+    height: fit-content;
+}
+
+.window_header_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.window_content {
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0.5rem;
+}
+

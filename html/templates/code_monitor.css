@@ -1,0 +1,48 @@
+#code_monitor_container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+#code_monitor_content {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.code_fragment {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.code_row {
+    display: none;
+    grid-template-columns: 1fr min-content;
+    gap: 0.2rem;
+    white-space: nowrap;
+    border: 1px solid #3b3b3b;
+    cursor: pointer;
+    box-shadow: 0 0 0.13rem 0.13rem #212226;
+    margin: 0.6rem 0.3rem 0 0;
+    padding: 0.6rem;
+    background-color: #242022;
+    border-radius: 0.3rem;
+}
+
+.code_row {
+    position: relative;
+}
+
+.code_row {
+    position: relative;
+    background-color: transparent;
+    transition: background-color 1.5s ease-out;
+}
+
+.code_row:active {
+    background-color: #61595e;
+    transition: none;
+}
+
+
+

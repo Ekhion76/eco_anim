@@ -1,0 +1,81 @@
+input:focus {
+    outline: none;
+    border-color: #003eff;
+}
+
+.select_box_wrapper {
+    position: relative;
+    margin: 0 0.3rem;
+}
+
+.select_box_header {
+    position: relative;
+    /*z-index: 10;*/
+}
+
+.select_box_cancel_button {
+    display: none;
+    position: absolute;
+    right: 0.4rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 0 0.4rem;
+    height: 1.4rem;
+    border: none;
+    border-radius: 50%;
+    color: #3d3d3d;
+    background: transparent;
+}
+
+.select_box_cancel_button:hover {
+    background: #a1a1a1;
+}
+
+.select_box_option_search {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid grey;
+    border-radius: 0.3rem;
+}
+
+.select_box_content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    max-height: 20rem;
+    overflow: auto;
+    background-color: #292528;
+    z-index: 50;
+    border: 0.05rem solid black;
+    box-shadow: 0.2rem 0.5rem 0.5rem 0 #1e1c1d;
+    border-radius: 0.3rem;
+}
+
+.input_focused {
+    display: block;
+}
+
+.option {
+    padding: 1rem;
+    width: 100%;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.option.selected {
+    background-color: #443c42;
+}
+
+.option:hover {
+    background-color: #3a3438;
+}
+
+.select_box_no_hits_container {
+    padding: 0.5rem;
+}
+
+
