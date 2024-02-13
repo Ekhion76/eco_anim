@@ -280,7 +280,10 @@ class AttachmentHandler {
         this.$adjust.values[key].text(value.toFixed(1));
     }
 
-    setAllAdjustValue(values = [0, 0, 0, 0, 0, 0]) {
+    setAllAdjustValue(values) {
+        if (values == null) {
+            values = [0, 0, 0, 0, 0, 0];
+        }
         Object.keys(this._adjust).forEach((key, i) => {
             this.adjustValue(key, values[i]);
             this.$adjust.sliders[key].slider("option", "value", values[i]);
